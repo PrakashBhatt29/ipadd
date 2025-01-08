@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import axios from 'axios';
+
 import { useCookies } from 'react-cookie';
 
 
 export const LinkIP = () => {
-    const [cookies, setCookie, removeCookie] = useCookies(['cookie-name']);
+    const [setCookie] = useCookies(['cookie-name']);
     const [ip, setIp] = useState('');
-    const [sessionId, setSessionId] = useState("");
+    // const [sessionId, setSessionId] = useState("");
     useEffect(() => {
       const fetchIp = async () => {
         try {
@@ -19,9 +19,8 @@ export const LinkIP = () => {
           //     ip_address: ip,
           //   }
           // );
-
-          setSessionId(sessionResponse.data.session_id);
-        setCookie ('session_id', sessionResponse.data.session_id, {path: '/'});
+        //   setSessionId(sessionResponse.data.session_id);
+        // setCookie ('session_id', sessionResponse.data.session_id, {path: '/'});
           
         } catch (error) {
           console.error('Error fetching IP:', error);
