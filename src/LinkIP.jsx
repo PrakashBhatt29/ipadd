@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-
-import { useCookies } from 'react-cookie';
+// import { useCookies } from 'react-cookie';
 
 
 export const LinkIP = () => {
-    const [setCookie] = useCookies(['cookie-name']);
+    // const [setCookie] = useCookies(['cookie-name']);
     const [ip, setIp] = useState('');
     // const [sessionId, setSessionId] = useState("");
     useEffect(() => {

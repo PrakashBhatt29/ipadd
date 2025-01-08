@@ -1,10 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Home } from './components/Home'
-import { LinkIP } from './components/LinkIp'
+import { Home } from './Home'
+import { LinkIP } from './LinkIP'
 
 function App() {
-
-
   return (
     <>
       <BrowserRouter>
