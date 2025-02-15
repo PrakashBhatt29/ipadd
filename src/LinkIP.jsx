@@ -24,6 +24,7 @@ export const LinkIP = () => {
         } catch (error) {
           console.error('Error fetching IP:', error);
         }
+          return
       };
   
       fetchIp();
